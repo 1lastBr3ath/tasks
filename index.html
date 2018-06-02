@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<!-- Copied from http://mdsec.net/wahh/tasks.html -->
+<head>
+    <base href="/tasks/" />
+    <meta content="en-gb" http-equiv="Content-Language" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible" />
+    <title>The Web Application Hacker's Handbook - Task Checklist</title>
+    <link href="ps.css" rel="stylesheet" type="text/css" />
+    <!--<link href="wahh.css" rel="stylesheet" type="text/css" />-->
+    <!--[if IE 6]>
+        <link href="../css/ie6.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--[if IE 7]>
+        <link href="../css/ie7.css" rel="stylesheet" type="text/css" />
+        <![endif]-->
+    <!--<link href="../css/favicon.png" rel="icon" type="image/png" />-->
+    <!--[if IE]>
+        <link href="../css/favicon.ico" rel="shortcut icon" />
+        <![endif]-->
+</head>
+
+<body>
+    <div id="TopBanner">
+        <ul>
+            <li><a href="http://mdsec.net/" rel="nofollow noreferrer" target="_blank">MDSec home</a></li>
+        </ul>
+    </div>
+    <div id="NavBar">
+        <ul>
+            <li><a href="http://mdsec.net/wahh/">WAHH</a></li>
+            <li>&gt;<a href="">Task Checklist</a></li>
+        </ul>
+    </div>
+    <div id="MainContent">
+        <!--<div class="RightHandBox">-->
+        <!--<div class="GreyBox">-->
+        <!--<div class="TopCorners"></div>-->
+        <!--<p>Site Contents</p>-->
+        <!--<ul>-->
+        <!--<li>Second edition:<ul>-->
+        <!--<li><a href="toc2e.html">Book contents</a></li>-->
+        <!--<li><a href="answers2e.html">Answers</a></li>-->
+        <!--<li><a href="code2e.html">Source code</a></li>-->
+        <!--</ul></li>-->
+        <!--<li>First edition:<ul>-->
+        <!--<li><a href="toc1e.html">Book contents</a></li>-->
+        <!--<li><a href="answers1e.html">Answers</a></li>-->
+        <!--<li><a href="code1e.html">Source code</a></li>-->
+        <!--</ul></li>-->
+        <!--<li><a href="tools.html">Tools</a></li>-->
+        <!--<li><a href="tasks.html">Task checklist</a></li>-->
+        <!--<li><a href="buy.html">Buy</a></li>-->
+        <!--</ul>-->
+        <!--<div class="BottomCorners"></div>-->
+        <!--</div>-->
+        <!--</div>-->
+        <p>This page contains a checklist of the tasks you typically need to perform when carrying out a comprehensive attack against a web application. You can use this as a quick reminder of the areas you need to cover. For more detail, and the specific action steps involved, refer to the full methodology in Chapter 21 (or Chapter 20 in the first edition).</p>
+        <h2>Recon and analysis</h2>
+        <p>
+            <input type="checkbox" />Map visible content<br/>
+            <input type="checkbox" />Discover hidden &amp; default content<br/>
+            <input type="checkbox" class="IndentCheck" />Try different User-agents to find differences in content<br/>
+            <input type="checkbox" class="IndentCheck" />Use wayback machine to find old, forgotten endpoints<br/>
+            <input type="checkbox" class="IndentCheck" />Use Shodan/Censys/ZoomEye to find similar endpoints<br/>
+            <input type="checkbox" />Test for debug parameters<br/>
+            <input type="checkbox" />Identify data entry points<br/>
+            <input type="checkbox" />Identify the technologies used<br/>
+            <input type="checkbox" /> Identify third-party hosted content<br/>
+            <input type="checkbox" />Map the attack surface<br/>
+        </p>
+        <h2>Test handling of access</h2>
+        <p>
+            <input type="checkbox" />Authentication<br/>
+            <input type="checkbox" class="IndentCheck" />Test password quality rules<br/>
+            <input type="checkbox" class="IndentCheck" />Test for username enumeration<br/>
+            <input type="checkbox" class="IndentCheck" />Test resilience to password guessing<br/>
+            <input type="checkbox" class="IndentCheck" />Test password creation strength<br/>
+            <input type="checkbox" class="IndentCheck" />Test any account recovery function<br/>
+            <input type="checkbox" class="IndentCheck" />Test any &quot;remember me&quot; function<br/>
+            <input type="checkbox" class="IndentCheck" />Test any impersonation function<br/>
+            <input type="checkbox" class="IndentCheck" />Test username uniqueness<br/>
+            <input type="checkbox" class="IndentCheck" />Check for unsafe distribution of credentials<br/>
+            <input type="checkbox" class="IndentCheck" />Test for fail-open conditions<br/>
+            <input type="checkbox" class="IndentCheck" />Test any multi-stage mechanisms<br/>
+            <input type="checkbox" />Session handling<br/>
+            <input type="checkbox" class="IndentCheck" />Test tokens for meaning<br/>
+            <input type="checkbox" class="IndentCheck" />Test tokens for predictability<br/>
+            <input type="checkbox" class="IndentCheck" />Check for insecure transmission of tokens<br/>
+            <input type="checkbox" class="IndentCheck" />Check for disclosure of tokens in logs<br/>
+            <input type="checkbox" class="IndentCheck" />Check mapping of tokens to sessions<br/>
+            <input type="checkbox" class="IndentCheck" />Check session termination<br/>
+            <input type="checkbox" class="IndentCheck" />Check for session fixation<br/>
+            <input type="checkbox" class="IndentCheck" />Check for cross-site request forgery<br/>
+            <input type="checkbox" class="IndentCheck" />Check cookie scope<br/>
+            <input type="checkbox" />Access controls<br/>
+            <input type="checkbox" class="IndentCheck" />Understand the access control requirements<br/>
+            <input type="checkbox" class="IndentCheck" />Test effectiveness of controls, using multiple accounts if possible<br/>
+            <input type="checkbox" class="IndentCheck" />Test for insecure access control methods (request parameters, Referer header, etc)<br/>
+        </p>
+        <h2>Test handling of input</h2>
+        <p>
+            <input type="checkbox" />Fuzz all request parameters<br/>
+            <input type="checkbox" />Test for SQL injection<br/>
+            <input type="checkbox" />Identify all reflected data<br/>
+            <input type="checkbox" class="IndentCheck" />Test for reflected XSS<br/>
+            <input type="checkbox" class="IndentCheck" />Test for HTTP header injection<br/>
+            <input type="checkbox" class="IndentCheck" />Test for arbitrary redirection<br/>
+            <input type="checkbox" class="IndentCheck" />Test for stored attacks<br/>
+            <input type="checkbox" />Test for OS command injection<br/>
+            <input type="checkbox" />Test for path traversal<br/>
+            <input type="checkbox" />Test for script injection<br/>
+            <input type="checkbox" />Test for file inclusion<br/>
+            <input type="checkbox" />Test for SMTP injection<br/>
+            <input type="checkbox" />Test for LDAP injection<br/>
+            <input type="checkbox" />Test for XPath injection<br/>
+            <input type="checkbox" />Test for Template injection<br/>
+            <input type="checkbox" />Test for SOAP/XXE injection<br/>
+            <input type="checkbox" />Test for native software flaws (buffer overflow, integer bugs, format strings)<br/>
+        </p>
+        <h2>Test application logic</h2>
+        <p>
+            <input type="checkbox" />Identify the logic attack surface<br/>
+            <input type="checkbox" />Test transmission of data via the client<br/>
+            <input type="checkbox" />Test for reliance on client-side input validation<br/>
+            <input type="checkbox" />Test any thick-client components (Java, ActiveX, Flash)<br/>
+            <input type="checkbox" />Test multi-stage processes for logic flaws<br/>
+            <input type="checkbox" />Test handling of incomplete input<br/>
+            <input type="checkbox" />Test trust boundaries<br/>
+            <input type="checkbox" />Test transaction logic<br/>
+        </p>
+        <h2>Assess application hosting</h2>
+        <p>
+            <input type="checkbox" />Test segregation in shared infrastructures<br/>
+            <input type="checkbox" />Test segregation between ASP-hosted applications<br/>
+            <input type="checkbox" />Test for web server vulnerabilities<br/>
+            <input type="checkbox" class="IndentCheck" />Default credentials<br/>
+            <input type="checkbox" class="IndentCheck" />Default content<br/>
+            <input type="checkbox" class="IndentCheck" />Dangerous HTTP methods<br/>
+            <input type="checkbox" class="IndentCheck" />Proxy functionality<br/>
+            <input type="checkbox" class="IndentCheck" />Virtual hosting mis-configuration<br/>
+            <input type="checkbox" class="IndentCheck" />Bugs in web server software<br/>
+        </p>
+        <h2>Miscellaneous tests</h2>
+        <p>
+            <input type="checkbox" />Test for race-conditions<br/>
+            <input type="checkbox" />Check for frame injection<br/>
+            <input type="checkbox" />Check for DOM-based attacks<br/>
+            <input type="checkbox" />Check for local privacy vulnerabilities<br/>
+            <input type="checkbox" class="IndentCheck" />Persistent cookies<br/>
+            <input type="checkbox" class="IndentCheck" />Caching<br/>
+            <input type="checkbox" class="IndentCheck" />Sensitive data in URL parameters<br/>
+            <input type="checkbox" class="IndentCheck" />Forms with autocomplete enabled<br/>
+            <input type="checkbox" />Follow up any information leakage<br/>
+            <input type="checkbox" />Check for weak SSL ciphers</p>
+    </div>
+    <div id="BottomBanner">
+        <p>Copyright © 2011 Dafydd Stuttard and Marcus Pinto. All rights reserved.</p>
+    </div>
+    <script src="persist.js" type="text/javascript"></script>
+</body>
+</html>

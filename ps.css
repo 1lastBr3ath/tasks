@@ -1,0 +1,738 @@
+﻿html, body, h1, h2, h3, p, ol, ul, li {
+	padding: 0px;
+	margin: 0px;
+	font-size: 14px;
+	font-weight: normal;
+}
+html {
+	overflow-y: scroll;
+}
+body {
+	background-color: white;
+	font-family: "Helvetica Neue", Verdana, sans-serif;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	width: 1000px;
+	color: #262626;
+}
+h1 {
+	color: #4D4D4D;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 0px 0px 15px 0px;
+	padding: 10px 0px 15px 10px;
+	background-image: url(heading.png);
+	background-repeat: no-repeat;
+	background-position: 0px 3px;
+}
+h2 {
+	color: #000099;
+	font-size: 22px;
+	font-weight: bold;
+	margin: 15px 0px 15px 0px;
+}
+h3 {
+	color: #000099;
+	font-size: 20px;
+	font-weight: bold;
+}
+p {
+	margin: 15px 0px 20px 0px;
+	line-height: 1.3em;
+}
+ol {
+	overflow: hidden;
+	margin: 10px 0px 10px 0px;
+	padding-left: 50px;
+}
+ul {
+	overflow: hidden;
+	margin: 0px 0px 5px 0px;
+	padding-left: 30px;
+	list-style: disc;
+}
+li {
+	margin: 5px 0px 5px 0px;
+	line-height: 1.3em;
+}
+a:visited {
+	outline: none;
+	text-decoration: underline;
+	color: inherit;
+}
+a:link {
+	outline: none;
+	text-decoration: underline;
+	color: inherit;
+}
+a:hover {
+	outline: none;
+	color: #000099;
+}
+strong {
+	color: #000099;
+	font-weight: bold;
+}
+img {
+	border: 0px;
+}
+table {
+	border-collapse: collapse;
+}
+td {
+	margin: 0px;
+	padding: 3px 6px 3px 0px;
+}
+#TopBanner {
+	height: 48px;
+	position: relative;
+	background: #8C8C8C url(http://mdsec.net/wahh/wahh.png) no-repeat;
+}
+
+#TopBanner ul {
+	float: right;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 15px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+}
+#TopBanner ul li {
+	font-size: 14px;
+	list-style: none;
+	display: inline;
+}
+#TopBanner ul li a {
+	padding: 5px;
+	text-decoration: none;
+	color: #E5E5E5;
+}
+#TopBanner ul li a:hover {
+	background-color: #E5E5FF;
+	color: #000099;
+}
+#NavBar {
+	clear: both;
+	color: #808080;
+}
+#NavBar ul {
+	list-style: none;
+	margin: 10px 0px 10px -5px;
+	padding-left: 0px;
+}
+#NavBar ul li {
+	display: inline;
+	font-size: 15px;
+	padding-right: 3px;
+}
+#NavBar ul li a {
+	padding-left: 5px;
+	text-decoration: none;
+	color: #808080;
+}
+#NavBar ul li a:hover {
+	color: #000099;
+}
+#MainContent {
+	clear: both;
+	position: relative;
+	margin-top: 5px;
+}
+#BottomBanner {
+	height: 20px;
+	margin-top: 40px;
+	color: #999999;
+	clear: both;
+	border-top: solid 1px #CCCCCC;
+	padding-top: 0px;
+}
+#BottomBanner p {
+	float: left;
+	padding: 0px;
+	margin: 0px;
+	font-size: 13px;
+}
+#BottomBanner ul {
+	float: right;
+	margin-top: 0px;
+}
+#BottomBanner ul li {
+	padding: 0px;
+	list-style: none;
+	display: inline;
+	font-size: 13px;
+}
+#BottomBanner ul li a {
+	margin-left: 5px;
+	text-decoration: none;
+	color: #999999;
+}
+#BottomBanner ul li a:hover {
+	color: #000099;
+}
+#FrontPageMain {
+	float: left;
+	width: 690px;
+	margin-bottom: 20px;
+	padding-bottom: 0px;
+}
+a#FrontPageSplash {
+	background: url(front.png) no-repeat;
+	display: block;
+	height: 400px;
+	margin-top: 15px;
+	text-decoration: none;
+}
+.LargeBullets {
+	clear: both;
+	margin-left: 10px;
+	padding-left: 0px;
+	margin-top: 5px;
+	padding-top: 0px;
+	margin-bottom: 0px;
+}
+.LargeBullets li {
+	list-style: none;
+	background-repeat: no-repeat;
+	background-position: 0px 10px;
+	padding-left: 40px;
+	margin-left: 0px;
+	font-size: 26px;
+	line-height: 46px;
+}
+.LargeBullets li.Download {
+	background-image: url(download.png);
+}
+.LargeBullets li.Help {
+	background-image: url(help.png);
+}
+.LargeBullets li.Learn {
+	background-image: url(learn.png);
+}
+.LargeBullets li.Consulting{
+	background-image: url(consulting.png);
+}
+.LargeBullets li a:link, .LargeBullets li a:visited {
+	color: #4D4D4D;
+	text-decoration: none;
+}
+.LargeBullets li a:hover {
+	color: #000099;
+	text-decoration: none;
+}
+.MediumBullets {
+	margin-left: 0px;
+	padding-left: 0px;
+	margin-top: 10px;
+	padding-top: 0px;
+	margin-bottom: 20px;
+}
+.MediumBullets li {
+	list-style: none;
+	background-image: url(chevrons.png);
+	background-repeat: no-repeat;
+	background-position: 5px 12px;
+	padding-left: 30px;
+	margin-left: 0px;
+	font-size: 20px;
+	line-height: 36px;
+}
+.MediumBullets li a:link, .MediumBullets li a:visited {
+	color: #404040;
+	text-decoration: none;
+}
+.MediumBullets li a:hover {
+	color: #000099;
+	text-decoration: none;
+}
+.LeftHandBox {
+	position: relative;
+	float: left;
+	margin: 0px 30px 0px 0px;
+}
+.RightHandBox {
+	position: relative;
+	float: right;
+	margin: 0px 0px 0px 20px;
+}
+.RightHandBoxPadded {
+	position: relative;
+	float: right;
+	margin: 20px 0px 0px 20px;
+}
+.OrangeBox {
+	position: relative;
+	width: 279px;
+	background: #B3B3FF;
+	background-image: url('orangeboxmain.png');
+	background-repeat: repeat-y;
+	margin: 0px 0px 15px 0px;
+}
+.OrangeBox .TopCorners {
+	background: url('orangeboxtop.png') no-repeat left top;
+	height: 10px;
+}
+.OrangeBox .BottomCorners {
+	background: url('orangeboxbottom.png') no-repeat left bottom;
+	height: 10px;
+}
+.OrangeBox p {
+	margin: 5px 0px 0px 0px;
+	padding: 0px 15px 0px 22px;
+	font-size: 18px;
+}
+.OrangeBox ul {
+	position: relative;
+	padding: 0px 10px 0px 20px;
+	margin: 10px 0px 0px 0px;
+	list-style: none;
+}
+.OrangeBox ul ul {
+	position: relative;
+	padding: 0px 0px 0px 20px;
+	margin: 0px;
+	list-style: disc;
+}
+.OrangeBox ul li {
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.OrangeBox ul ul li {
+	margin-bottom: 0px;
+}
+.OrangeBox a:visited {
+	outline: none;
+	text-decoration: underline;
+	color: #4D4D4D;
+}
+.OrangeBox a:link {
+	outline: none;
+	text-decoration: underline;
+	color: #4D4D4D;
+}
+.OrangeBox a:hover {
+	outline: none;
+	color: #595959;
+}
+.WideOrangeBox {
+	position: relative;
+	width: 399px;
+	font-size: 14px;
+	background: #B3B3FF;
+	background-image: url('wideorangeboxmain.png');
+	background-repeat: repeat-y;
+	margin: 0px 0px 50px 0px;
+}
+.WideOrangeBox .TopCorners {
+	background: url('wideorangeboxtop.png') no-repeat left top;
+	height: 10px;
+}
+.WideOrangeBox .BottomCorners {
+	background: url('wideorangeboxbottom.png') no-repeat left bottom;
+	height: 10px;
+}
+.WideOrangeBox p {
+	margin: 5px 0px 0px 0px;
+	padding: 0px 15px 0px 22px;
+	font-size: 18px;
+}
+.GreyBox {
+	width: 278px;
+	position: relative;
+	font-size: 14px;
+	background: #CCCCCC;
+	background-image: url('greyboxmain.png');
+	background-repeat: repeat-y;
+	margin: 0px 0px 15px 0px;
+}
+.GreyBox .TopCorners {
+	background: url('greyboxtop.png') no-repeat left top;
+	min-height: 10px;
+	height: 10px;
+}
+.GreyBox .BottomCorners {
+	background: url('greyboxbottom.png') no-repeat left bottom;
+	height: 10px;
+}
+.GreyBox p {
+	margin: 5px 0px 0px 0px;
+	padding: 0px 15px 0px 22px;
+	font-size: 18px;
+}
+.GreyBox ul {
+	position: relative;
+	padding: 0px 10px 0px 40px;
+	margin: 10px 0px 0px 0px;
+}
+.GreyBox ul li {
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.GreyBox a:visited {
+	outline: none;
+	text-decoration: underline;
+	color: #262626;
+}
+.GreyBox a:link {
+	outline: none;
+	text-decoration: underline;
+	color: #262626;
+}
+.GreyBox a:hover {
+	outline: none;
+	color: #666666;
+}
+.QuoteList {
+	position: relative;
+}
+.QuoteList p {
+	font-size: 20px;
+	line-height: 1.2em;
+}
+.QuoteList a {
+	display: block;
+	text-align: right;
+	font-size: 13px;
+	margin-top: 10px;
+	margin-right: 15px;
+}
+.QuoteList a:link {
+	color: #262626;
+}
+.QuoteList a:visited {
+	color: #262626;
+}
+.QuoteList a:hover {
+	color: #4D4D4D;
+}
+.QuoteSize1 {
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+	height: 165px;
+}
+.QuoteSize2 {
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+	height: 115px;
+}
+.QuoteSize3 {
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+	height: 100px;
+}
+.QuoteSize4 {
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+	height: 65px;
+}
+.QuoteSize5 {
+	margin: 10px 0px 20px 0px;
+	padding: 0px;
+	height: 40px;
+}
+.QuoteList p.Quote {
+	font-size: 14px;
+}
+.QuoteList p.Author {
+	text-align: right;
+	font-size: 10px;
+}
+.QuoteSize5 p.Author {
+	display: none;
+}
+p.InlineQuote {
+	font-style: italic;
+}
+ul#NewsList {
+	padding: 0px 20px 0px 20px;
+	font-size: 13px;
+}
+ul#NewsList li {
+	position: relative;
+	list-style: none;
+	background-image: url(calendar.png);
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	margin: 5px 0px 10px -2px;
+	padding-left: 36px;
+	min-height: 50px;
+}
+ul#NewsList li a {
+	color: #262626;
+	text-decoration: none;
+}
+ul#NewsList li a:hover {
+	color: #262626;
+	text-decoration: underline;
+}
+ul#NewsList li .Month {
+	font-family: Verdana, sans-serif;
+	position: absolute;
+	left: -6px;
+	top: 2px;
+	font-size: 8px;
+	width: 40px;
+	text-align: center;
+	color: #101010;
+}
+ul#NewsList li .Day {
+	font-family: Verdana, sans-serif;
+	position: absolute;
+	left: -6px;
+	top: 15px;
+	font-size: 16px;
+	font-weight: bold;
+	width: 40px;
+	text-align: center;
+	color: #595959;
+}
+p.ScreenshotsTitle {
+	color: #404040;
+	margin: 10px 6px 5px 0px;
+	font-size: 13px;
+	text-align: center;
+}
+ul.ScreenshotsList {
+	list-style: none;
+	padding: 0px;
+	margin: 0px;
+}
+ul.ScreenshotsList li {
+	display: block;
+	text-align: center;
+	margin: 10px 0px 10px 0px;
+}
+ul.ScreenshotsList img {
+	border: 2px #3433FF solid;
+	height: 150px;
+	width: 200px;
+}
+table#CompareEditions {
+	border-collapse: collapse;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+table#CompareEditions td {
+	border-right: 15px white solid;
+	padding: 5px 15px 5px 15px;
+	margin: 0px;
+	vertical-align: top;
+}
+table#CompareEditions td.ColItem {
+	text-align: right;
+	padding-bottom: 10px;
+	padding-right: 5px;
+}
+table#CompareEditions td.ColItemPadRight {
+	text-align: right;
+	padding-bottom: 10px;
+	padding-right: 33px;
+}
+table#CompareEditions td.ColFree {
+	width: 250px;
+	text-align: center;
+	background-image: url('greyboxmain.png');
+	background-repeat: repeat-y;
+}
+table#CompareEditions td.TopColFree {
+	width: 250px;
+	background-image: url('greyboxtop.png');
+	background-repeat: no-repeat;
+}
+table#CompareEditions td.BottomColFree {
+	width: 250px;
+	background-image: url('greyboxbottom.png');
+	background-repeat: no-repeat;
+}
+table#CompareEditions td p.CellFree {
+	margin: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px #CCCCCC solid;
+}
+table#CompareEditions td p.CellFreeTick {
+	margin: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px #CCCCCC solid;
+	background-image: url(greytick.png);
+	background-repeat: no-repeat;
+	background-position: 112px 0px;
+}
+table#CompareEditions td.ColPro {
+	width: 250px;
+	text-align: center;
+	background-image: url('orangeboxmain.png');
+	background-repeat: repeat-y;
+}
+table#CompareEditions td.TopColPro {
+	width: 250px;
+	background-image: url('orangeboxtop.png');
+	background-repeat: no-repeat;
+}
+table#CompareEditions td.BottomColPro {
+	width: 250px;
+	background-image: url('orangeboxbottom.png');
+	background-repeat: no-repeat;
+}
+table#CompareEditions td p.CellProTick {
+	margin: 0px;
+	padding-bottom: 10px;
+	border-bottom: 1px #FFC266 solid;
+	background-image: url(orangetick.png);
+	background-repeat: no-repeat;
+	background-position: 112px 0px;
+}
+table#CompareEditions td p.ToolTitle {
+	margin: 0px;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+table#CompareEditions td p.ToolSubtitle {
+	margin: 0px;
+	font-size: 16px;
+}
+table#CompareEditions td img {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-style: none;
+}
+.ScannerBackground {
+	background-image: url(scanner.png);
+	background-repeat: no-repeat;
+	margin-top: -5px;
+}
+a.ScannerBackgroundLink {
+	display: block;
+	height: 210px;
+	text-decoration: none;
+}
+.VersionDependent {
+	font-style: italic;
+	color: #000099;
+}
+.Code p, p.Code, .Code td {
+	font-family: "Courier New", Courier, monospace;
+	margin: 0px;
+}
+.InlineCode {
+	font-family: "Courier New", Courier, monospace;
+}
+a.SmallLink {
+	background-image: url(orangechevron.png);
+	background-repeat: no-repeat;
+	background-position: 3px 5px;
+	padding-left: 12px;
+	padding-right: 10px;
+	text-decoration: none;
+	color: #000099;
+	font-size: 14px;
+}
+a.SmallLink:hover {
+	color: #B2B2B2;
+	background-image: url(greychevron.png);
+}
+a.Query {
+	background-image: url(orangequery.png);
+	background-repeat: no-repeat;
+	background-position: 1px 0px;
+	padding-left: 18px;
+	margin-left: 4px;
+	text-decoration: none;
+}
+a.Query:hover {
+	background-image: url(greyquery.png);
+}
+.Clear {
+	clear: both;
+}
+a.ScannerImage {
+	float: left;
+	background-image: url(scanner2.png);
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+a.WahhImage {
+	float: left;
+	background-image: url(http://mdsec.net/wahh/wahh.png);
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+a.ClassroomImage {
+	float: left;
+	background-image: url(classroom.png);
+	background-repeat: no-repeat;
+	width: 320px;
+	height: 150px;
+	margin-bottom: 20px;
+}
+.Warning {
+	color: #000099;
+}
+.WarningBox {
+	width: 960px;
+	background-color: #E5E5E5;
+	border: 5px solid #000099;
+	padding: 15px;
+	font-size: 14px;
+}
+.Shaded {
+	background-color: #E5E5E5;
+	border: 7px solid #E5E5E5;
+	font-size: 14px;
+}
+table.Shaded {
+	border-collapse: separate;
+}
+table.Shaded td {
+	margin: 0px;
+	padding: 3px 5px 3px 5px;
+}
+.NotShaded {
+	background-color: #FFFFFF;
+}
+.NotShaded td {
+	border-left: solid 1px #E5E5E5;
+	border-right: solid 1px #E5E5E5;
+}
+a.Rss {
+	background-image: url(rss.png);
+	background-repeat: no-repeat;
+	background-position: -2px 1px;
+	padding-left: 22px;
+	margin-right: 10px;
+}
+.WahhCover {
+	position: relative;
+	float: right;
+	margin: 20px 0px 30px 20px;
+	width: 278px;
+	text-align: center;
+	font-size: 15px;
+}
+.WahhCover p {
+	margin: 0;
+}
+a.WahhLink {
+	position: relative;
+	height: 350px;
+	display: block;
+	background-image: url('wahh2e.png');
+	background-repeat: no-repeat;
+	text-decoration: none;
+}
+p.FeedLinks {
+	text-align: right;
+}
+p.FeedLinks a {
+	text-decoration: none;
+}
+
+input.IndentCheck {
+	margin-left: 30px;
+}
